@@ -31,12 +31,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ItzRandom/Gemini-Discord"
+    "url": "https://github.com/ItzRandom23/Discord-AI-Bot"
   },
   "bugs": {
-    "url": "https://github.com/ItzRandom/Gemini-Discord/issues"
+    "url": "https://github.com/ItzRandom23/Discord-AI-Bot/issues"
   },
-  "homepage": "https://github.com/ItzRandom/Gemini-Discord#readme",
+  "homepage": "https://github.com/ItzRandom23/Discord-AI-Bot#readme",
   "author": "Itz Random",
   "license": "MIT"
 }
