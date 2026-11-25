@@ -1,25 +1,33 @@
 {
-  "name": "gemini-discord",
-  "version": "0.1.0",
-  "description": "A powerful Discord bot that integrates Google Gemini.",
+  "name": "unified-discord-ai-bot",
+  "version": "0.2.0",
+  "description": "A provider-neutral conversational AI bot for Discord.",
+  "private": true,
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "node --env-file-if-exists=.env index.js",
+    "register": "node --env-file-if-exists=.env scripts/register.js",
+    "check:providers": "node --env-file-if-exists=.env scripts/check-providers.js",
+    "lint": "eslint .",
+    "check": "node scripts/check.js",
+    "test": "node --test \"test/*.test.js\""
   },
   "dependencies": {
-    "discord.js": "^14.17.3",
-    "@google/generative-ai": "^0.21.0"
+    "@google/genai": "^3.6.1",
+    "discord.js": "^14.28.1",
+    "openai": "^7.64.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.15.0"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=24.17.0 <25"
   },
   "keywords": [
     "discord-bot",
-    "google",
-    "gemini",
-    "discord",
-    "bot"
+    "conversational-ai",
+    "discord"
   ],
   "repository": {
     "type": "git",
